@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Number Guesser</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li><h1 class="number-title">Number</h1></li>
+      <li><h1 class="guesser-title">Guesser</h1></li>
+    </ul>
+  </header>
+
+      <section>
+        <form id="guessForm">
+        <article>
+          <label for="first-number-input"></label>
+          <input id="first-number-input" name="user-guess" type="number" placeholder="Type your guess here!">
+          <button id= "guess-button" class="game-buttons">Guess</button>
+         <!--  go back and make this a type=submit button -->
+          <button id="clear-button" class="game-buttons" value="clear" disabled="true" type="button">Clear</button>
+        </article>
+
+        <article>
+          <h2>Your last guess was</h2>
+          <h2 id="guess-display">??</h2>
+          <h2 id="user-feedback"></h2>
+          <button id="reset-button" class="reset-button" disabled="true" type="button">Reset</button>
+        </article>
+      </form>
+      </section>
+
+
+  <script type="text/javascript" src="game.js"></script>
+
+</body>
+
+<!-- onClick="clearField(); -->
+<!-- onkeyup="disable(); -->

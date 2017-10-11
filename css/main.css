@@ -1,0 +1,94 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: Open Sans !important; 
+}
+
+/*go back and use developer tools to fix the important*/
+/*HEADER*/
+
+header {
+  height: 112px;
+  background-color: #404041;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+ul li {
+  display: inline;
+  padding: 0px 5px;
+}
+
+h1 {
+  display: inline;
+  text-align: center;
+}
+
+article {
+  text-align: center;
+}
+
+input {
+  width: 475px;
+  height: 50px;
+  text-align: center;
+  margin: 50px 0px 45px 0px;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  background-color: #929497;
+  color: #ffffff;
+  height: 50px;
+  font: open sans;
+  font-size: 30px;
+  font-weight: 300;
+  }
+
+button:hover {
+  background-color: #ED458B;
+}
+
+button:disabled {
+  background-color: #D0D2D3;
+}
+
+.game-buttons {
+  display: inline-block;
+  margin: 0px 15px;
+  width: 215px;
+}
+
+.reset-button {
+  width: 470px;
+}
+
+.number-title {
+  color: #ED458B;
+  font-size: 44px;
+/*  font-family: open sans;
+*/  font-weight: 700;
+}
+
+.guesser-title {
+  color: #E6E7E8;
+  font-size: 44px;
+ /* font-family: open sans;*/
+  font-weight: 300;
+}
+
+#guess-display {
+  color: #ED458B;
+  font-size: 100px;
+}
+
