@@ -1,36 +1,79 @@
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
-  font-family: Open Sans !important; 
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0px;
+  padding
 }
 
-/*go back and use developer tools to fix the important*/
-/*HEADER*/
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.range-inputs {
+  width: 60px;
+  height: 40px;
+  font-size: 15px;
+}
+
+#user-range-submit {
+  margin: 0px 5px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#intro-div {
+  height: 150px;
+}
+
+#first-article {
+  padding: 5px;
+}
+
+#guess-form {
+  margin: 0;
+}
+
+#instructions-message {
+  color: #ED458B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
 
 header {
-  height: 112px;
   background-color: #404041;
-  padding: 0px;
-  margin: 0 auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
   text-align: center;
-  padding: 30px 0px;
+  width: 100%;
+  padding: 32px 0;
 }
 
-ul li {
-  display: inline;
-  padding: 0px 5px;
-}
-
-h1 {
-  display: inline;
+#range-set {
+  color: #D0D2D3;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+}
+
+#number-title {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+/*  margin-top: 30px;
+*/}
+
+#number-title span {
+  color: #ED458B;
+  font-size: 60px;
+  font-weight: 700;
+  margin-right: 10px;
 }
 
 article {
@@ -38,10 +81,15 @@ article {
 }
 
 input {
-  width: 475px;
+  width: 473px;
   height: 50px;
-  text-align: center;
-  margin: 50px 0px 45px 0px;
+  font-size: 30px;
+  font-color: #D0D2D3;
+  font-weight: lighter;
+  text-align: left;
+  text-indent: 10px;
+  margin: 40px 0px 40px 0px;
+  border: light;
 }
 
 button {
@@ -49,10 +97,10 @@ button {
   border: none;
   background-color: #929497;
   color: #ffffff;
-  height: 50px;
+  height: 42px;
   font: open sans;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 100;
   }
 
 button:hover {
@@ -65,30 +113,43 @@ button:disabled {
 
 .game-buttons {
   display: inline-block;
-  margin: 0px 15px;
-  width: 215px;
+  margin: 5px 20px 0px 20px;
+  width: 216px;
 }
 
-.reset-button {
-  width: 470px;
+.game-form-text {
+  font-size: 30px;
+  font-color: #D0D2D3;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.number-title {
-  color: #ED458B;
-  font-size: 44px;
-/*  font-family: open sans;
-*/  font-weight: 700;
+#guess-display-title {
+  margin: 70px 0px 50px 0px;
+  color: #D0D2D3;
 }
 
-.guesser-title {
-  color: #E6E7E8;
-  font-size: 44px;
- /* font-family: open sans;*/
-  font-weight: 300;
+#user-feedback {
+  margin: 40px 0px 70px 0px;
+  color: #D0D2D3;
 }
 
 #guess-display {
   color: #ED458B;
-  font-size: 100px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 200px;
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
 }
 
+.container {
+  height: 365px;
+}
+
+.reset-button {
+  font-size: 20px;
+  height: 45px;
+  width: 473px;
+  margin: 25px 0px 100px 0px;
+  padding: 0;
+}

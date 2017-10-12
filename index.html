@@ -3,40 +3,55 @@
 <html lang="en">
 <head>
   <title>Number Guesser</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-
   <header>
-    <ul>
-      <li><h1 class="number-title">Number</h1></li>
-      <li><h1 class="guesser-title">Guesser</h1></li>
-    </ul>
+    <div id="header-div">
+      <h1 id="number-title"><span>Number</span>Guesser</h1>
+    </div>
   </header>
 
       <section>
-        <form id="guessForm">
-        <article>
-          <label for="first-number-input"></label>
-          <input id="first-number-input" name="user-guess" type="number" placeholder="Type your guess here!">
-          <button id= "guess-button" class="game-buttons">Guess</button>
-         <!--  go back and make this a type=submit button -->
-          <button id="clear-button" class="game-buttons" value="clear" disabled="true" type="button">Clear</button>
-        </article>
+         <form id="range-set">
+            <div id="intro-div">
+              <h3 id="user-range-prompt">Choose the minimum<span><label for="min"></label>
+              <input id="user-min" type="min" name="user-min" class="range-inputs"></span> and maximum<span><label for="max"></label>
+              <input id="user-max" type="max" name="user-max" class="range-inputs"></span> and press<span><button id="user-range-submit" type="input">Go</button></span>!</h3>
+              <h4 id="instructions-message"></h4>
+            </div>
+          </form>  
+      
 
-        <article>
-          <h2>Your last guess was</h2>
-          <h2 id="guess-display">??</h2>
-          <h2 id="user-feedback"></h2>
-          <button id="reset-button" class="reset-button" disabled="true" type="button">Reset</button>
-        </article>
-      </form>
-      </section>
+          <form id="guessForm">
+            <article id="first-article">
+             <label for="first-number-input"></label>
+             <input id="first-number-input" name="user-guess" type="number" placeholder="Enter your guess">
+            </article>
+          
+            <article>
+              <button id= "guess-button" class="game-buttons">Guess</button>
+              <button id="clear-button" class="game-buttons" value="clear" disabled="true" type="button">Clear</button>
+            </article>
+          </form>
 
+          <form>
+            <article id="gameForm">
+              <div class="container">
+                <h2 id="guess-display-title" class="game-form-text">Your guess will display here...</h2>
+                <h2 id="guess-display">?</h2>
+                <h2 id="user-feedback" class="game-form-text"></h2>
+              </div>
+              <div>
+                <button id="reset-button" class="reset-button" disabled="true" type="button">Reset</button>
+              </div>
+            </article>
+          </form>
+        </section>
 
-  <script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="game.js"></script>
 
 </body>
 
